@@ -1,0 +1,38 @@
+.nav {
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 50px;
+  border: 1px solid rgb(99, 99, 99);
+}
+
+.nav-item {
+  margin: 0 15px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: beige !important; /* Asegura que el color sea beige */
+  padding: 10px 15px; /* Añade padding para que el botón tenga algo de espacio */
+  border: 2px solid white; /* El borde es transparente por defecto */
+}
+
+.nav-link:hover {
+  color: #835f32 !important; /* Cambia a café al hacer hover */
+  border: 1px solid #835f32;
+  background-color: #3b3b3b;
+  border-radius: 6px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+}

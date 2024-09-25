@@ -1,0 +1,7 @@
+.app {
+  background: linear-gradient(to right, #000000, #4b4b4b);
+}
+
+html {
+  scroll-behavior: smooth;
+}
