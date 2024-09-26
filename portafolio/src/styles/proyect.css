@@ -1,0 +1,93 @@
+.div-container-proyect {
+  background-color: transparent;
+  height: 800px;
+  width: 1100px;
+  color: white;
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
+.titulo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 60px;
+}
+
+.div-proyect {
+  background-color: transparent;
+  margin-bottom: 40px;
+  color: white;
+  width: 1200px;
+  height: 170px;
+  margin-right: 40px;
+  border: none; /* Sin borde visible inicialmente */
+  position: relative;
+  transition: all 0.3s ease; /* Transición suave para el hover */
+}
+
+.div-proyect::before,
+.div-proyect::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  transition: all 0.1s ease;
+}
+
+.div-proyect::before {
+  /* Definir la "L" en la esquina superior izquierda */
+  top: 0;
+  left: 0;
+  width: 10px; /* Línea horizontal de la "L" */
+  height: 12px; /* Línea vertical de la "L" */
+  border-top: 2px solid white; /* Línea superior de la "L" */
+  border-left: 2px solid white; /* Línea izquierda de la "L" */
+}
+
+.div-proyect::after {
+  /* Definir la "L" en la esquina inferior derecha */
+  bottom: 0;
+  right: 0;
+  width: 10px; /* Línea horizontal de la "L" */
+  height: 12px; /* Línea vertical de la "L" */
+  border-bottom: 2px solid white; /* Línea inferior de la "L" */
+  border-right: 2px solid white; /* Línea derecha de la "L" */
+}
+
+/* Al hacer hover, cambiar el borde y el color del texto */
+.div-proyect:hover {
+  color: #a53400; /* Cambia el color del texto al hacer hover */
+}
+
+.div-proyect:hover::before,
+.div-proyect:hover::after {
+  background-color: transparent;
+  border-color: #a53400;
+  width: 100%; /* Completa el borde horizontal al hacer hover */
+  height: 100%; /* Completa el borde vertical al hacer hover */
+  border-radius: 0px; /* Mantén las esquinas cuadradas */
+}
+
+.proyects {
+  margin-left: 10px;
+  padding-top: 20px;
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  width: 1150px;
+}
+
+.preview {
+  background-color: red;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-left: 950px;
+  margin-top: 20px;
+}
+
+.code {
+  background-color: yellow;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+}

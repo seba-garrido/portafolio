@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Carousel from "./components/Carousel";
 import About from "./components/About";
 import Experience from "./components/Experience";
+import Proyect from "./components/Proyects";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <About />
       <Experience />
+      <Proyect />
       <Carousel />
     </div>
   );
