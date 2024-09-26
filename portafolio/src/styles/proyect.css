@@ -73,21 +73,52 @@
   border-bottom: 2px solid white;
   padding-bottom: 10px;
   width: 1150px;
+  display: flex; /* Flexbox para alinear contenido */
+  flex-direction: column; /* Alinea en columna las imágenes y los botones */
+  align-items: flex-start; /* Alinea el contenido al inicio */
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-start; /* Controla el espacio entre los SVGs */
+  align-items: center; /* Alinea los SVGs verticalmente */
+  background-color: transparent;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.image-container img {
+  max-width: 100%; /* Asegura que los SVGs no se salgan del contenedor */
+  height: 30px; /* Mantiene la proporción de los SVGs */
+  margin: 0 10px; /* Espacio entre los SVGs */
+}
+
+.buttons-container {
+  display: flex; /* Flexbox para los botones */
+  justify-content: flex-start; /* Alinea los botones al inicio */
+  gap: 10px; /* Espacio entre los botones */
+  margin-top: 20px;
 }
 
 .preview {
-  background-color: red;
+  background-color: transparent;
   width: 100px;
   height: 35px;
   border-radius: 5px;
   margin-right: 20px;
   margin-left: 950px;
-  margin-top: 20px;
+  margin-top: -20px;
+  border: 2px solid white;
+  color: white;
 }
 
 .code {
-  background-color: yellow;
+  background-color: transparent;
   width: 100px;
   height: 35px;
   border-radius: 5px;
+  margin-top: -20px;
+  border: 2px solid white;
+  color: white;
 }
