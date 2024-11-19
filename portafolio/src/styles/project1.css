@@ -18,8 +18,8 @@
 
 /* Styling for images */
 .images {
-  flex: 1 1 calc(33.33% - 20px); /* Cada imagen ocupa un tercio del ancho */
-  max-width: calc(33.33% - 20px); /* Mantener el tamaño proporcional */
+  flex: 0 0 auto; /* Las imágenes no se estiran ni ocupan más espacio del necesario */
+  max-width: 33.33%; /* Mantener el tamaño proporcional */
   height: 250px; /* Establecer un alto fijo */
   min-height: 350px; /* Establecer un mínimo para evitar que se colapse */
   object-fit: contain; /* Ajustar para que la imagen se ajuste sin recortes */

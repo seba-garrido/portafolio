@@ -11,12 +11,12 @@ function Project1() {
         {" "}
         {/* Contenedor de imágenes */}
         <img
-          src="../../public/images/calendario1.png"
+          src="../../public/images/calendario2.png"
           className="images"
           alt="Qml"
         />
         <img
-          src="../../public/images/calendario2.png"
+          src="../../public/images/calendario1.png"
           className="images"
           alt="Qml"
         />
