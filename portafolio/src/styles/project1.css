@@ -1,0 +1,73 @@
+/* General styling */
+.container-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.titulo {
+  font-size: 2.5rem; /* Aumentar el tamaño del texto */
+  margin-bottom: 30px;
+  text-align: center; /* Centrar el texto */
+  color: white;
+  width: 100%; /* Asegurar que tome todo el ancho */
+}
+
+/* Styling for images */
+.images {
+  flex: 1 1 calc(33.33% - 20px); /* Cada imagen ocupa un tercio del ancho */
+  max-width: calc(33.33% - 20px); /* Mantener el tamaño proporcional */
+  height: 250px; /* Establecer un alto fijo */
+  min-height: 350px; /* Establecer un mínimo para evitar que se colapse */
+  object-fit: contain; /* Ajustar para que la imagen se ajuste sin recortes */
+  object-position: center; /* Centrar la imagen dentro del contenedor */
+  margin: 10px; /* Espacio entre imágenes */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.images:hover {
+  transform: scale(1.1); /* Zoom leve al pasar el cursor */
+}
+
+/* Flex container for images */
+.image-container {
+  display: flex; /* Alinear imágenes en fila */
+  flex-wrap: wrap; /* Permitir que las imágenes se ajusten a múltiples filas */
+  justify-content: center; /* Centrar las imágenes horizontalmente */
+  gap: 20px; /* Espacio entre imágenes */
+  width: 100%; /* Usar todo el ancho del contenedor */
+  max-width: 1400px; /* Limitar el ancho máximo del contenedor */
+  height: 800px;
+}
+
+/* Video styling */
+.d-block-video {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Centrar el video horizontalmente */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .images {
+    flex: 1 1 100%; /* Las imágenes ocupan todo el ancho en pantallas pequeñas */
+    max-width: 100%; /* Ajustar imágenes al ancho disponible */
+    height: 150px; /* Reducir la altura en pantallas más pequeñas */
+    margin: 10px 0;
+  }
+
+  .image-container {
+    justify-content: center; /* Centrar las imágenes */
+    gap: 15px;
+  }
+}

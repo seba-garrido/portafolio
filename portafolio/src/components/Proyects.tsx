@@ -1,10 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import "../styles/proyect.css";
 
 function Proyect() {
+  const navigate = useNavigate();
+
+  const handleProjectClick = (id) => {
+    navigate(`/project/${id}`);
+  };
   return (
-    <div className="div-container-proyect">
+    <div id="proyect" className="div-container-proyect">
       <h1 className="titulo">Trabajos.</h1>
-      <div className="div-proyect">
+      <div className="div-proyect" onClick={() => handleProjectClick(1)}>
         <h2 className="proyects">App Movil</h2>
         <div className="image-container">
           <img
@@ -33,16 +39,8 @@ function Proyect() {
             alt="Html"
           />
         </div>
-        <div className="buttons-container">
-          <button className="preview" type="button">
-            DEMO
-          </button>
-          <button className="code" type="button">
-            CODE
-          </button>
-        </div>
       </div>
-      <div className="div-proyect">
+      <div className="div-proyect" onClick={() => handleProjectClick(2)}>
         <h2 className="proyects">App movil 2</h2>
         <div className="image-container">
           <img
@@ -71,16 +69,8 @@ function Proyect() {
             alt="Html"
           />
         </div>
-        <div className="buttons-container">
-          <button className="preview" type="button">
-            DEMO
-          </button>
-          <button className="code" type="button">
-            CODE
-          </button>
-        </div>
       </div>
-      <div className="div-proyect">
+      <div className="div-proyect" onClick={() => handleProjectClick(3)}>
         <h2 className="proyects">App Web</h2>
         <div className="image-container">
           <img
@@ -108,14 +98,6 @@ function Proyect() {
             className="d-block"
             alt="Html"
           />
-        </div>
-        <div className="buttons-container">
-          <button className="preview" type="button">
-            DEMO
-          </button>
-          <button className="code" type="button">
-            CODE
-          </button>
         </div>
       </div>
     </div>
